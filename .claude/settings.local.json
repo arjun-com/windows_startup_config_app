@@ -11,7 +11,9 @@
       "Bash(./node_modules/.bin/electron:*)",
       "Bash(npm info:*)",
       "Bash(node_modules/electron/dist/electron.exe:*)",
-      "Bash(test:*)"
+      "Bash(test:*)",
+      "Bash(git init:*)",
+      "Bash(git restore:*)"
     ]
   }
 }
