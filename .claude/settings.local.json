@@ -1,0 +1,17 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npx webpack)",
+      "Bash(npm install:*)",
+      "Bash(npx webpack:*)",
+      "Bash(npm start)",
+      "Bash(node -e:*)",
+      "Bash(npx electron:*)",
+      "Bash(node_modules\\\\.bin\\\\electron:*)",
+      "Bash(./node_modules/.bin/electron:*)",
+      "Bash(npm info:*)",
+      "Bash(node_modules/electron/dist/electron.exe:*)",
+      "Bash(test:*)"
+    ]
+  }
+}

@@ -1,0 +1,67 @@
+{
+  "name": "windows-startup-config-app",
+  "version": "1.0.0",
+  "description": "Windows startup sequence manager with visual configuration",
+  "main": "main/main.js",
+  "scripts": {
+    "start": "webpack && electron .",
+    "dev": "webpack --watch & electron .",
+    "build": "webpack && electron-builder"
+  },
+  "keywords": [
+    "electron",
+    "windows",
+    "startup",
+    "automation",
+    "react",
+    "desktop-app",
+    "system-tray",
+    "windows-startup",
+    "startup-manager"
+  ],
+  "author": "Windows Startup Config Contributors",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/YOUR_USERNAME/windows-startup-config-app.git"
+  },
+  "bugs": {
+    "url": "https://github.com/YOUR_USERNAME/windows-startup-config-app/issues"
+  },
+  "homepage": "https://github.com/YOUR_USERNAME/windows-startup-config-app#readme",
+  "dependencies": {
+    "react": "^19.2.4",
+    "react-dom": "^19.2.4",
+    "uuid": "^13.0.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.29.0",
+    "@babel/preset-env": "^7.29.0",
+    "@babel/preset-react": "^7.28.5",
+    "babel-loader": "^10.0.0",
+    "css-loader": "^7.1.3",
+    "electron": "^22.0.0",
+    "electron-builder": "^26.7.0",
+    "html-webpack-plugin": "^5.6.6",
+    "style-loader": "^4.0.0",
+    "webpack": "^5.105.2",
+    "webpack-cli": "^6.0.1"
+  },
+  "build": {
+    "appId": "com.startupconfig.app",
+    "productName": "Windows Startup Config",
+    "win": {
+      "target": "nsis",
+      "icon": "renderer/public/icons/app-icon.ico"
+    },
+    "files": [
+      "main/**/*",
+      "renderer/dist/**/*",
+      "preload/**/*",
+      "package.json"
+    ],
+    "directories": {
+      "output": "dist"
+    }
+  }
+}
