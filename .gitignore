@@ -1,3 +1,6 @@
+# Claude AI
+.claude/
+
 # Dependencies
 node_modules/
 package-lock.json
